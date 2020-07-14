@@ -13,28 +13,40 @@ Es un Librerias para componentes de React
 
 ### Button's type
 
+Puedes utilizar estos componentes como `button o Link(a)` solamente utilizando `href`.
+
 ``` js
     import React from 'react'
-    import { PrimaryButton,
-     SecundaryButton,
-     SuccessButton, 
-     WarningButton, 
-     DangerButton, 
-     InfoButton,
-     LightButton,
-     DarkButton 
-    } from 'dplibrariesreact'
+    import { 
+    Button, 
+    Container, 
+    TitlePages, 
+    PrimaryButton, 
+    SecundaryButton, 
+    DangerButton, 
+    WarningButton, 
+    InfoButton, 
+    LightButton, 
+    DarkButton } from 'dplibrariesreact'
     export default function ButtonPage() {
     return (
         <Main>
-            <PrimaryButton>Boton primario</PrimaryButton>
-            <SecundaryButton>Boton Secundario</SecundaryButton>
-            <SuccessButton>Botón de exito</SuccessButton>
-            <WarningButton>Boton Advertencia</WarningButton>
-            <DangerButton>Botón Peligro</DangerButton>
-            <InfoButton>Botón Información</InfoButton>
-            <LightButton>Botón ligero</LightButton>
-            <DarkButton>Botón oscuro</DarkButton>
+            <Button type='button'>Botón Por defecto</Button>
+            <PrimaryButton type='button'>Botón Primario</PrimaryButton>
+            <SecundaryButton type='button'>Botón Secundario</SecundaryButton>
+            <DangerButton type='button'>Botón Peligro</DangerButton>
+            <WarningButton type='button'>Botón Advertencia</WarningButton>
+            <InfoButton type='button'>Botón Información</InfoButton>
+            <LightButton type='button'>Botón Ligero</LightButton>
+            <DarkButton type='button'>Botón Oscuro</DarkButton>
+            <Button href='#'>Enlace Por defecto</Button>
+            <PrimaryButton href='#'>Enlace Primario</PrimaryButton>
+            <SecundaryButton href='#'>Enlace Secundario</SecundaryButton>
+            <DangerButton href='#'>Enlace Peligro</DangerButton>
+            <WarningButton href='#'>Enlace Advertencia</WarningButton>
+            <InfoButton href='#'>Enlace Información</InfoButton>
+            <LightButton href='#'>Enlace Ligero</LightButton>
+            <DarkButton href='#'>Enlace Oscuro</DarkButton>
         </>
     )
 }

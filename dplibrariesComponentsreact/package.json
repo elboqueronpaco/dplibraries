@@ -1,6 +1,6 @@
 {
   "name": "dplibrariesreact",
-  "version": "0.1.0",
+  "version": "0.1.2-beta.0",
   "description": "Creando Components para react con @emotion/styled ",
   "main": "lib/entry.js",
   "private": false,
@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -18,9 +19,11 @@
   "scripts": {
     "dev": "react-scripts start",
     "build:react": "react-scripts build",
-    "build": "babel source --out-dir lib ",
+    "build": "babel src/source --out-dir lib ",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "login": "npm login",
+    "publish": "npm publish --tag beta"
   },
   "eslintConfig": {
     "extends": "react-app"

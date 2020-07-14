@@ -1,7 +1,7 @@
 import React from 'react'
 import Main from '../main'
-import Container from '../../components/Container'
-import TitlePages from '../../components/TitlePages'
+import { Container, TitlePages } from '../../source/entry'
+
 
 const Home = () => {
     return (

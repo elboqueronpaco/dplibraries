@@ -1,17 +1,19 @@
 import React from 'react'
 import Main from '../main'
-import Container from '../../components/Container'
-import TitlePages from '../../components/TitlePages'
+
 import { ButtonContainer, PreStyled } from './styled'
-import { PrimaryButton,
-     SecundaryButton,
-     SuccessButton, 
-     WarningButton, 
-     DangerButton, 
-     InfoButton,
-     LightButton,
-     DarkButton 
-    } from '../../entry.js'
+import { 
+    Button, 
+    Container, 
+    TitlePages, 
+    PrimaryButton, 
+    SecundaryButton, 
+    DangerButton, 
+    WarningButton, 
+    InfoButton, 
+    LightButton, 
+    DarkButton } from '../../source/entry'
+
 
 export default function ButtonPage() {
     return (
@@ -22,14 +24,14 @@ export default function ButtonPage() {
                 <h3>Ejemplos de Botones para Componentes de React.js</h3>
                 <p>Aquí veís varios botones predefindos, para el uso de componentes de react, cada uno para un uso semántico.</p>
                 <ButtonContainer>
-                    <PrimaryButton>Boton primario</PrimaryButton>
-                    <SecundaryButton>Boton Secundario</SecundaryButton>
-                    <SuccessButton>Botón de exito</SuccessButton>
-                    <WarningButton>Boton Advertencia</WarningButton>
-                    <DangerButton>Botón Peligro</DangerButton>
-                    <InfoButton>Botón Información</InfoButton>
-                    <LightButton>Botón ligero</LightButton>
-                    <DarkButton>Botón oscuro</DarkButton>
+                    <Button type='button'>Botón Por defecto</Button>
+                    <PrimaryButton type='button'>Botón Primario</PrimaryButton>
+                    <SecundaryButton type='button'>Botón Secundario</SecundaryButton>
+                    <DangerButton type='button'>Botón Peligro</DangerButton>
+                    <WarningButton type='button'>Botón Advertencia</WarningButton>
+                    <InfoButton type='button'>Botón Información</InfoButton>
+                    <LightButton type='button'>Botón Ligero</LightButton>
+                    <DarkButton type='button'>Botón Oscuro</DarkButton>
                 </ButtonContainer>
                     <PreStyled>{`
                     <PrimaryButton> button </PrimaryButton>
@@ -41,6 +43,18 @@ export default function ButtonPage() {
                     <LightButton> button </LightButton>
                     <DarkButton> button </DarkButton><br/>
                     `}</PreStyled>
+                <h3>Utilizar estos estilos de botones como enlances como <b>Link</b></h3>
+                <p>También puedes utilizar estos componentes tan solo utilizando la propiede href se tranfromaran en etiquetas <b>a</b></p>
+                <ButtonContainer>
+                    <Button href='#'>Enlace Por defecto</Button>
+                    <PrimaryButton href='#'>Enlace Primario</PrimaryButton>
+                    <SecundaryButton href='#'>Enlace Secundario</SecundaryButton>
+                    <DangerButton href='#'>Enlace Peligro</DangerButton>
+                    <WarningButton href='#'>Enlace Advertencia</WarningButton>
+                    <InfoButton href='#'>Enlace Información</InfoButton>
+                    <LightButton href='#'>Enlace Ligero</LightButton>
+                    <DarkButton href='#'>Enlace Oscuro</DarkButton>
+                </ButtonContainer>
             </Container>
         </Main>
     )
